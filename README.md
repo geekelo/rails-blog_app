@@ -92,7 +92,7 @@ Clone this repository to your desired folder:
 
 
 ```sh
-   git clone https://github.com/HafizMassamTabraizKhan/Blog-app.git
+   git clone https://github.com/geekelo/rails-blog_app.git
    cd rails-blog-app
 ```
 
