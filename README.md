@@ -16,7 +16,6 @@
 - [📖 PERSONAL INVENTORY ](#-personal-inventory-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
-    - [Video Presentation ](#video-presentation-)
     - [Key Features ](#key-features-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -146,9 +145,9 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [] Social Networking
-- [] Developers Forum
-- [] Virtual Meetings
+- [ ] Social Networking
+- [ ] Developers Forum
+- [ ] Virtual Meetings
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
