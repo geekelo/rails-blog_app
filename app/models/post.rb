@@ -4,6 +4,9 @@ class Post < ApplicationRecord
   has_many :likes, dependent: :destroy
 
   after_save :update_post_counter
+
+  private
+
   # Custom Method: Update the posts counter for a user
   def update_post_counter
     author.increment!(:posts_counter)
