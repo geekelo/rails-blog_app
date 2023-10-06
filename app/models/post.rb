@@ -7,6 +7,11 @@ class Post < ApplicationRecord
 
   private
 
+  # Custom Method: Get the 3 most recent posts for a user
+  def recent_posts
+    posts.order(created_at: :desc).limit(3)
+  end
+
   # Custom Method: Update the posts counter for a user
   def update_post_counter
     author.increment!(:posts_counter)
