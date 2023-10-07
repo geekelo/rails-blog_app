@@ -1,17 +1,16 @@
 class Comment < ApplicationRecord
+  # Associations
   belongs_to :author, class_name: 'User'
-  belongs_to :post
+  belongs_to :post, class_name: 'Post'
 
-  # Custom Method: Update the comments counter for a post
-  after_save :update_post_comment_counter
+  # Attributes
+  attribute :text, :text
 
-  private
+  # Callback
+  after_save :update_comments_counter_for_post
 
-  def recent_comments
-    comments.order(created_at: :desc).limit(5)
-  end
-
-  def update_post_comment_counter
+  # Methods
+  def update_comments_counter_for_post
     post.increment!(:comments_counter)
   end
 end
