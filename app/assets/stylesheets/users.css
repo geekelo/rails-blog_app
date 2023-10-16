@@ -5,11 +5,11 @@
 }
 
 #user-details {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    border: 1px solid black;
-    padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid black;
+  padding: 0 2rem;
 }
 
 .container {
