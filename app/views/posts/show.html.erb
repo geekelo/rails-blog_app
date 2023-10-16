@@ -1,1 +1,11 @@
-<h1>post show</h1>
+<%= render partial: 'post', locals: { post: @post } %> <br>
+<%= "no comments for this post" if @post.comments.empty?%>
+<div class="comments">
+<% @post.comments.each do |comment|%>
+        <%=render comment %>
+<% end %>
+<div class="button-container">
+    <button>Pagination</a></button>
+</div>
+</div>
+
