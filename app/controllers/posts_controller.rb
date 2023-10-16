@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     # Placeholder for all post page
-    @user = User.find(params[:user_id])  # Assuming you're using user_id from params
+    @user = User.find(params[:user_id]) # Assuming you're using user_id from params
     @posts = @user.posts
   end
 

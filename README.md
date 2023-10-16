@@ -31,13 +31,17 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PERSONAL INVENTORY <a name="about-project"></a>
+# 📖 RAILS BLOG APP <a name="about-project"></a>
 
 
 **RAILS BLOG APP** This Blog app represents an engaging blog platform developed with Ruby on Rails. This platform empowers users to generate, peruse, engage with comments, and show appreciation through likes on posts. It stands as a straightforward yet impactful illustration of crafting web applications.
 
-The database schema for this was generated and guided using the UML Diagram below
-![Alt text](image.png)
+WIREFRAME
+![image](https://github.com/geekelo/rails-blog_app/assets/102464578/d223e0ec-551d-4389-a45a-b9e0b62e770c)
+![image](https://github.com/geekelo/rails-blog_app/assets/102464578/b6d75d35-5613-4fec-a23f-533ac2c40af6)
+![image](https://github.com/geekelo/rails-blog_app/assets/102464578/072ef998-2566-4116-a21c-edd58af433da)
+![image](https://github.com/geekelo/rails-blog_app/assets/102464578/8e31087f-f384-46f0-9f9f-befc87ebd8b1)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
