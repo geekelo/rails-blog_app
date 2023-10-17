@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Like < ApplicationRecord
   # Associations
   belongs_to :author, class_name: 'User'
