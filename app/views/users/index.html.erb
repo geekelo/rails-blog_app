@@ -1,1 +1,9 @@
-<h1>user index</h1>
+<% if @users.empty? %>
+  No users
+<% else %>
+  <% @users.each do |user| %>
+    <%= link_to user_path(user) do %>
+      <%= render user %>
+    <% end %><br>
+  <% end %>
+<% end %>

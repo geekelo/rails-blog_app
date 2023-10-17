@@ -7,6 +7,7 @@ AllCops:
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
+    - 'vendor/bundle/**/*'
 
   DisplayCopNames: true
 
@@ -38,7 +39,7 @@ Style/AndOr:
   Enabled: false
 Style/DefWithParentheses:
   Enabled: false
-Style/FrozenStringLiteralComment:
+# rubocop:disable Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
 Layout/HashAlignment:

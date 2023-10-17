@@ -1,0 +1,32 @@
+#user {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+#user-details {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border: 1px solid black;
+  padding: 0 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 94.5%;
+  border: 1px solid black;
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+
+.counts {
+  text-align: right;
+}
+
+.button-container {
+  width: 200px;
+  margin: auto;
+  margin-top: 1rem;
+}

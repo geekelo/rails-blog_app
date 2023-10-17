@@ -31,13 +31,12 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PERSONAL INVENTORY <a name="about-project"></a>
+# 📖 RAILS BLOG APP <a name="about-project"></a>
 
 
 **RAILS BLOG APP** This Blog app represents an engaging blog platform developed with Ruby on Rails. This platform empowers users to generate, peruse, engage with comments, and show appreciation through likes on posts. It stands as a straightforward yet impactful illustration of crafting web applications.
 
-The database schema for this was generated and guided using the UML Diagram below
-![Alt text](image.png)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
