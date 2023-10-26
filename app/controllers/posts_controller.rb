@@ -4,12 +4,12 @@ class PostsController < ApplicationController
   def index
     # Placeholder for all post page
     @user = User.find(params[:user_id]) # Assuming you're using user_id from params
-    @posts = @user.posts
+    @posts = @user.posts.includes(:comments).paginate(page: params[:page], per_page: 2)
   end
 
   def show
     # Placeholder for single post page
-    @post = Post.find(params[:id])
+    @post = Post.includes(comments: :author).find(params[:id])
   end
 
   def new
