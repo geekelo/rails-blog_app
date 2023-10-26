@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Comment < ApplicationRecord
   # Associations
   belongs_to :author, class_name: 'User'
