@@ -136,6 +136,12 @@ To run tests, run the following command:
 - Twitter: [@twitterhandle](https://twitter.com/geekelo_xyz)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/eloghene-otiede)
 
+👤 **Samuel Wanza**
+
+- GitHub: [@githubhandle](https://github.com/Samuelwanza)
+- Twitter: [@twitterhandle](https://twitter.com/samuelmunguti9)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/samuel-munguti)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
