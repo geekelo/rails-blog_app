@@ -60,6 +60,7 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 5.0'
   gem 'webdrivers'
   gem 'will_paginate'
+  gem 'devise', '>= 4.9.3'
 end
 
 group :development do
