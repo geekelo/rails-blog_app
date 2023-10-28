@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class PostsController < ApplicationController
+  load_and_authorize_resource
   def index
     # Placeholder for all post page
     @user = User.find(params[:user_id]) # Assuming you're using user_id from params
