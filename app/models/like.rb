@@ -13,6 +13,7 @@ class Like < ApplicationRecord
   def increment_likes_counter_for_post
     post.increment!(:likes_counter)
   end
+
   def decrement_likes_counter_for_post
     post.decrement!(:likes_counter)
   end
