@@ -61,6 +61,7 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 5.0'
   gem 'webdrivers'
   gem 'will_paginate'
+  gem 'cancancan'
 end
 
 group :development do

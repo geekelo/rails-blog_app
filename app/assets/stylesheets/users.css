@@ -30,3 +30,16 @@
   margin: auto;
   margin-top: 1rem;
 }
+
+#post {
+  padding: 10px 10px;
+}
+
+
+.delete-post-link {
+  background-color: var(--light_purple);
+  min-height: 2rem;
+  border: 0.2rem solid var(--purple);
+  border-radius: 5px;
+  padding: 4px 6px;
+}
