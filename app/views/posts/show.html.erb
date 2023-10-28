@@ -1,8 +1,26 @@
+
+<%= stylesheet_link_tag 'user', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'post', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<body>
+<% flash.each do |key, value| %>
+  <div class="flash <%= key %>">
+    <%= value %>
+  </div>
+<% end %>
+<nav class="nav">
+    <%= link_to "Home", root_path %>
+    <%= link_to "Back", :back %>
+    <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete } %>
+</nav>
 <%= render partial: 'post', locals: { post: @post } %> <br>
 <%= "no comments for this post" if @post.comments.empty?%>
 <div class="comments">
 <% @post.comments.each do |comment|%>
         <%=render comment %>
+        <% if can? :delete, comment %>
+        <%= button_to 'Delete', post_comment_path(@post, comment), method: :delete, data: { confirm: 'Are you sure you want to delete this comment?' } %>
+      <% end %>
 <% end %>
 <div class="button-container">
     <button>Pagination</button>
