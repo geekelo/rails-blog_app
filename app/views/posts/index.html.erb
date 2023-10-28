@@ -1,18 +1,28 @@
+<%= stylesheet_link_tag 'user', media: 'all', 'data-turbolinks-track': 'reload' %>
 <body>
-<%= render @user %>
+<nav class="nav">
+    <%= link_to "Add New Post", new_user_post_path(@user.id) %>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Back", :back %>
+    <%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete } %>
+</nav>
+<% flash.each do |key, value| %>
+  <div class="flash <%= key %>">
+    <%= value %>
+  </div>
+<% end %>
+
+<%= render @user%>
 <% @posts.each do |post| %>
     <a href ="<%= user_post_path(@user, post)%>"><%= render post%></a>
     <%= "no comments for this post" if post.comments.empty?%>
     <div class="comments">
-    <% post.recent_comments.each do |comment|%>
+    <% post.recent_comments.includes(:author).each do |comment|%>
+    <% post.five_most_recent_comments.includes(:author).each do |comment|%>
         <%=render comment%>
     <% end %>
-    <p id="view-post"><%= link_to 'View Post', user_post_path(@user, post) %></p>
     </div>
-    
-<div class="button-container">
-    <button>See all posts</a></button>
-</div>
-    <% end %>
-
+    <p id="view-post"><%= link_to 'View Post', user_post_path(@user, post) %></p>
+<% end %>
 </body>
+<%= will_paginate @posts %>

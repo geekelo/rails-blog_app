@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag 'user', media: 'all', 'data-turbolinks-track': 'reload' %>
 <div id="post" class="container">
 post #<%= post.id %><br>
     <%= post.text %><br>
@@ -5,4 +6,10 @@ post #<%= post.id %><br>
 comments: <%= post.comments_counter? ? post.comments_counter : 0 %> , 
 Likes: <%= post.likes_counter? ? post.likes_counter : 0 %>
 </p>
+<% if can? :destroy, post %>
+  <%= link_to "Delete Post", user_post_path(current_user, post), method: :delete, data: {
+                    turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+                    }, class: "delete-post-link" %>
+<%end%>
 </div>
